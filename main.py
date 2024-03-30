@@ -15,6 +15,8 @@ def check_decimal(input):
     #check positive, negative sign, shift target to the digits 
     if input[0] in ('+', '-'):
         input = input[1:]
+    
+    #first non-zero digit???
 
     #check each digit
     for digit in input:
@@ -63,7 +65,33 @@ def check_hexa(input):
 def check_fpl(input):
     pre_check(input)
 
+    #counter for the number of 'e' and '.'
+    decimal_point = 0
+    exp_char = 0
+
+    for char in input:
+        if char == '.':
+            decimal_point += 1
+        if char == 'e':
+            exp_char += 1
+        if char not in '0123456789.eE+-':
+            return False
+    if decimal_point > 1 or exp_char > 1:
+        return False
     
+    for i, char in enumerate(input):
+        #sign can only be after 'e' or 'E'
+        if char in ('+', '-'):
+            #before +/- is not e/E --> false
+            if input[i - 1] not in ('e', 'E'):
+                return False   
+    return True
+
+    
+
+
+
+
 # main
 user_input = input("Enter a number: ")
 if check_decimal(user_input):
@@ -74,6 +102,9 @@ elif check_octal(user_input):
    
 elif check_hexa(user_input):
     print("The input is  a hexadecimal integer!")
+
+elif check_fpl(user_input):
+    print("FPL!")
 
 else:
     print("The input is not valid!")
