@@ -58,6 +58,12 @@ def check_hexa(input):
     
     return True
 
+
+#testing floating point literals
+def check_fpl(input):
+    pre_check(input)
+
+    
 # main
 user_input = input("Enter a number: ")
 if check_decimal(user_input):
