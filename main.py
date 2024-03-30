@@ -33,9 +33,11 @@ def check_octal(input):
     if input[0] == '0':
         if len(input) > 2 and input[1] in 'oO':
             input = input[2:]
+        else:
+            return False
     else:
         return False
-
+    
     #check each digit
     for digit in input:
         if digit not in '01234567':
@@ -50,6 +52,8 @@ def check_hexa(input):
     if input[0] == '0':
         if len(input) > 2 and input[1] in 'xX':
             input = input[2:]
+        else:
+            return False
     else:
         return False
 
@@ -85,6 +89,19 @@ def check_fpl(input):
             #before +/- is not e/E --> false
             if input[i - 1] not in ('e', 'E'):
                 return False   
+        elif char in ('e', 'E'):
+            # e/E won't be the first or last char
+            if i == 0 or i == len(input) - 1:
+                return False
+            # before or after  e/E has to be digits 
+            if input[i - 1] not in '0123456789' or input[i + 1] not in '0123456789+-':
+                return False
+        elif char == '.':
+            #before or after '.' has to be digits, '.' cannot stand alone
+            if input[i - 1] not in '0123456789' or input[i + 1] not in '0123456789':
+                return False
+            
+
     return True
 
     
