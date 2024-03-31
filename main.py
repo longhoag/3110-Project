@@ -37,12 +37,10 @@ def check_octal(input):
             return False
     else:
         return False
-    
     #check each digit
     for digit in input:
         if digit not in '01234567':
             return False
-    
     return True
 
 def check_hexa(input):
@@ -61,9 +59,7 @@ def check_hexa(input):
     for digit in input:
         if digit not in '0123456789abcdefABCDEF':
             return False
-    
     return True
-
 
 #testing floating point literals
 def check_fpl(input):
@@ -99,15 +95,8 @@ def check_fpl(input):
         elif char == '.':
             #before or after '.' has to be digits, '.' cannot stand alone
             if input[i - 1] not in '0123456789' or input[i + 1] not in '0123456789':
-                return False
-            
-
+                return False   
     return True
-
-    
-
-
-
 
 # main
 user_input = input("Enter a number: ")
