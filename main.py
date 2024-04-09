@@ -1,5 +1,3 @@
-import sys
-
 def pre_check(input):
 
     #clean input
@@ -110,10 +108,10 @@ elif check_hexa(user_input):
     print("The input is  a hexadecimal integer!")
 
 elif check_fpl(user_input):
-    print("FPL!")
+    print("The input is floating  point literal!")
 
 else:
     print("The input is not valid!")
 
-
+#testing
 print(user_input)
