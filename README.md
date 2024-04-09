@@ -6,15 +6,16 @@
 
 ## Recognize Python octal integer literals
 
-![Screenshot 2024-03-30 at 5 58 06 PM](https://github.com/longhoag/3110-Project/assets/99232763/574db145-45ea-40f6-9f24-75484c955f3f)
+<img width="802" alt="Screenshot 2024-04-08 at 5 50 25 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/70135cda-282d-4cc0-b515-2cac4da3cd3d">
 
 ## Recognize Python hexadecimal integer literals
 
-![Screenshot 2024-03-30 at 5 59 37 PM](https://github.com/longhoag/3110-Project/assets/99232763/779d4dba-6d6d-46ee-9bc6-86c3aa315e95)
+<img width="788" alt="Screenshot 2024-04-08 at 5 54 34 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/8475205c-e4d8-4cc3-afab-5851ec3be7b4">
+
 
 ## Recognize Python floating point literals
 
-![Screenshot 2024-03-30 at 6 10 25 PM](https://github.com/longhoag/3110-Project/assets/99232763/95289dce-a3bc-4bf6-ac16-3e29f72d0e41)
+<img width="985" alt="Screenshot 2024-04-08 at 6 07 23 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/42e9883f-69cc-40fd-8de2-aaaffcc4750f">
 
 
 ## Information regarding the code
