@@ -2,7 +2,7 @@
 
 ## Recognize Python decimal integer literals
 
-![Screenshot 2024-03-30 at 5 43 20 PM](https://github.com/longhoag/3110-Project/assets/99232763/3fa1db70-324c-476c-b3dd-305232d7f2e4)
+<img width="822" alt="Screenshot 2024-04-08 at 5 47 52 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/590ae1c8-32fd-40c7-9504-f732f3dc9564">
 
 ## Recognize Python octal integer literals
 
