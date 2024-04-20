@@ -16,6 +16,10 @@ This is a small part of our code showing the example of the coded transition tab
 
 ![Screenshot 2024-04-19 at 11 54 31 PM](https://github.com/longhoag/3110-Project/assets/99232763/9a5f7c64-397c-46e6-ac07-b8cacd7f94a0)
 
+![Screenshot 2024-04-20 at 12 00 24 AM](https://github.com/longhoag/3110-Project/assets/99232763/65693d90-964a-4189-8612-b45b601be1af)
+
+You can see how we define our parameters in the code. Since the transition table codes in the NFA are made completely from the NFA design, this attachment is shown as an example for other NFA as well.  
+
 ## Recognize Python octal integer literals
 
 <img width="802" alt="Screenshot 2024-04-08 at 5 50 25 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/70135cda-282d-4cc0-b515-2cac4da3cd3d">
