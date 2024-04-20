@@ -85,6 +85,9 @@ class Octal:
         (2, '5'): {3},
         (2, '6'): {3},
         (2, '7'): {3},
+        (2, '_'): {3},
+
+
         (3, '0'): {3},
         (3, '1'): {3},
         (3, '2'): {3},
@@ -94,6 +97,7 @@ class Octal:
         (3, '6'): {3},
         (3, '7'): {3},
         (3, '_'): {4},
+
         (4, '0'): {3},
         (4, '1'): {3},
         (4, '2'): {3},
@@ -139,6 +143,7 @@ class Hexadecimal:
         (2, 'd'): {3},
         (2, 'e'): {3},
         (2, 'f'): {3},
+        (2, '_'): {3},
 
         (3, '0'): {3},
         (3, '1'): {3},
@@ -175,27 +180,48 @@ class Hexadecimal:
         (4, '7'): {3},
         (4, '8'): {3},
         (4, '9'): {3},
+        (4, 'A'): {3},
+        (4, 'B'): {3},
+        (4, 'C'): {3},
+        (4, 'D'): {3},
+        (4, 'E'): {3},
+        (4, 'F'): {3},
+        (4, 'a'): {3},
+        (4, 'b'): {3},
+        (4, 'c'): {3},
+        (4, 'd'): {3},
+        (4, 'e'): {3},
+        (4, 'f'): {3},
     }
 
     start_state = 0
-    accept_state = {1, 3}
+    accept_state = {3}
 
 decimal_nfa = NFA(Decimal.states, Decimal.alphabet, Decimal.transitions, Decimal.start_state, Decimal.accept_state)
 
 octal_nfa = NFA(Octal.states, Octal.alphabet, Octal.transitions, Octal.start_state, Octal.accept_state)
 
+hex_nfa = NFA(Hexadecimal.states, Hexadecimal.alphabet, Hexadecimal.transitions, Hexadecimal.start_state, Hexadecimal.accept_state)
+
 test2 = [".0O2378", "0o_23", "0O13123"]
 
 test1 = ["0000", "0123", "23_23", "_23_23", "3__3", "33_2134_2342", "232423_", ".23e"]
 
+test3 = ["0xdeadbeef", "34", "0Xdede", "0xde_de0", "0x_ded", "0xdede_", "0xddada__da"]
+
 # Check if the strings are recognized by the NFA
 
-for string in test1:
-    if decimal_nfa.is_accept(string):
-        print(f"'{string}' is a valid  decimal number.")
-    else:
-        print(f"'{string}' is not a valid  decimal number.")
+# for string in test2:
+#     if octal_nfa.is_accept(string):
+#         print(f"'{string}' is valid .")
+#     else:
+#         print(f"'{string}' is not ")
 
+for string in test3:
+    if hex_nfa.is_accept(string):
+        print(f"'{string}' is valid .")
+    else:
+        print(f"'{string}' is not ")
 
 # for string in test:
 #     if octal_nfa.is_accept(string):
