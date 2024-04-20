@@ -18,6 +18,7 @@
 		<state id="3" name="q3">
 			<x>470.0</x>
 			<y>110.0</y>
+			<final/>
 		</state>
 		<state id="4" name="q4">
 			<x>624.0</x>
@@ -26,6 +27,11 @@
 		<!--The list of transitions.-->
 		<transition>
 			<from>2</from>
+			<to>3</to>
+			<read>'_'</read>
+		</transition>
+		<transition>
+			<from>4</from>
 			<to>3</to>
 			<read>[A-Fa-f0-9]</read>
 		</transition>
@@ -40,11 +46,6 @@
 			<read>'_'</read>
 		</transition>
 		<transition>
-			<from>4</from>
-			<to>3</to>
-			<read>[A-Fa-f0-9]</read>
-		</transition>
-		<transition>
 			<from>1</from>
 			<to>2</to>
 			<read>x</read>
@@ -57,7 +58,7 @@
 		<transition>
 			<from>2</from>
 			<to>3</to>
-			<read>'_'</read>
+			<read>[A-Fa-f0-9]</read>
 		</transition>
 		<transition>
 			<from>3</from>
