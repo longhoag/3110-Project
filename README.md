@@ -36,3 +36,11 @@ You can see how we define our parameters in the code. Since the transition table
 
 ## Information regarding the code
 All the code is packed in one file, main.py
+
+
+## Guidlines for the NFA designs
+
+![Screenshot 2024-04-20 at 12 24 38 AM](https://github.com/longhoag/3110-Project/assets/99232763/c9090a84-d427-46b0-b8f8-2c82a518d2ec)
+![Screenshot 2024-04-20 at 12 24 54 AM](https://github.com/longhoag/3110-Project/assets/99232763/8d92d97b-cb37-4b2d-8c9f-8bcc0e240e63)
+
+The NFA design and rules for recognizing the input strings are based on Python documentations for Integer literals and floating point literals.
