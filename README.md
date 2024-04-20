@@ -4,7 +4,11 @@
 
 ![Screenshot 2024-04-19 at 11 46 11 PM](https://github.com/longhoag/3110-Project/assets/99232763/ee45caf6-6854-40ca-976e-b77e93298de2)
 
-We use this object so that we can simulate the NFA design in our code.
+We use this object so that we can simulate the NFA design in our code. With the design of the NFA, we will then define how many states in the NFA, the alphabet of the language, the state transition, the starting state and the eccepting states. When the input is passed onto the object, the function in the object will loop through each characters and change the current state based on the coded transition table made from the NFA. Since we have already defined our accepting states, if the current state is the accepting state after looping through the last character, the input is recognized by the NFA. Otherwise, the input is not recognized.
+
+![Screenshot 2024-04-19 at 11 52 32 PM](https://github.com/longhoag/3110-Project/assets/99232763/cd45ef99-b373-4b09-b9da-43ff9db22990)
+
+This is a small part of our code showing the example of the coded transition table. We have the current state, and after a value is passed, it will go to the next state, the same as the design of the NFA.
 
 ## Recognize Python decimal integer literals
 
