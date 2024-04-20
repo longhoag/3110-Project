@@ -1,5 +1,11 @@
 # 3110 Project: Python Numerical Literal Checker
 
+## NFA Design Coding Implementation 
+
+![Screenshot 2024-04-19 at 11 46 11 PM](https://github.com/longhoag/3110-Project/assets/99232763/ee45caf6-6854-40ca-976e-b77e93298de2)
+
+We use this object so that we can simulate the NFA design in our code.
+
 ## Recognize Python decimal integer literals
 
 <img width="822" alt="Screenshot 2024-04-08 at 5 47 52 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/590ae1c8-32fd-40c7-9504-f732f3dc9564">
