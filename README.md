@@ -22,16 +22,14 @@ You can see how we define our parameters in the code. Since the transition table
 
 ## Recognize Python octal integer literals
 
-<img width="802" alt="Screenshot 2024-04-08 at 5 50 25 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/70135cda-282d-4cc0-b515-2cac4da3cd3d">
+![Screenshot 2024-04-20 at 12 15 26 AM](https://github.com/longhoag/3110-Project/assets/99232763/a28b8e41-8bab-4056-9675-37d991e1c5be)
 
 ## Recognize Python hexadecimal integer literals
 
-<img width="788" alt="Screenshot 2024-04-08 at 5 54 34 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/8475205c-e4d8-4cc3-afab-5851ec3be7b4">
 
 
 ## Recognize Python floating point literals
 
-<img width="985" alt="Screenshot 2024-04-08 at 6 07 23 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/42e9883f-69cc-40fd-8de2-aaaffcc4750f">
 
 
 ## Information regarding the code
