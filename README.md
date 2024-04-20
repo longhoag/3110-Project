@@ -10,9 +10,11 @@ We use this object so that we can simulate the NFA design in our code. With the 
 
 This is a small part of our code showing the example of the coded transition table. We have the current state, and after a value is passed, it will go to the next state, the same as the design of the NFA.
 
+**When you compare the NFA designs with the transtion tables in our code, you can easily trace the branches and understand where we are getting.**
+
 ## Recognize Python decimal integer literals
 
-<img width="822" alt="Screenshot 2024-04-08 at 5 47 52 PM" src="https://github.com/longhoag/3110-Project/assets/99232763/590ae1c8-32fd-40c7-9504-f732f3dc9564">
+![Screenshot 2024-04-19 at 11 54 31 PM](https://github.com/longhoag/3110-Project/assets/99232763/9a5f7c64-397c-46e6-ac07-b8cacd7f94a0)
 
 ## Recognize Python octal integer literals
 
