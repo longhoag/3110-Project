@@ -197,7 +197,6 @@ class Hexadecimal:
     start_state = 0
     accept_state = {3}
 
-
 class FloatingPointLiterals:
     states = {0,1,2,3,4,5,6,7,8,9,10,11,12}
     alphabet = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'e', 'E', '+', '-', '_'}
@@ -369,7 +368,6 @@ class FloatingPointLiterals:
     start_state = 0
     accept_state = {3, 4, 6, 10}
 
-
 decimal_nfa = NFA(Decimal.states, Decimal.alphabet, Decimal.transitions, Decimal.start_state, Decimal.accept_state)
 
 octal_nfa = NFA(Octal.states, Octal.alphabet, Octal.transitions, Octal.start_state, Octal.accept_state)
@@ -378,23 +376,28 @@ hex_nfa = NFA(Hexadecimal.states, Hexadecimal.alphabet, Hexadecimal.transitions,
 
 fpl_nfa = NFA(FloatingPointLiterals.states, FloatingPointLiterals.alphabet, FloatingPointLiterals.transitions, FloatingPointLiterals.start_state, FloatingPointLiterals.accept_state)
 
-test2 = [".0O2378", "0o_23", "0O13123"]
-
 test1 = ["0000", "0123", "23_23", "_23_23", "3__3", "33_2134_2342", "232423_", ".23e"]
 
-test3 = ["0xdeadbeef", "34", "0Xdede", "0xde_de0", "0x_ded", "0xdede_", "0xddada__da"]
+test2 = [".0O2378", "0o_23", "0O13123"]
 
+test3 = ["0xdeadbeef", "34", "0Xdede", "0xde_de0", "0x_ded", "0xdede_", "0xddada__da"]
 
 test4 = [".01e", "1.e", "1.e34", "0.3", "3.14", "10.", ".001", "1e100", "3.14e-10", "0e0", "3.14_15_93", "0.23_", "0.23e+23912", "0.23e+2391_23_"]
 
 
 # Check if the strings are recognized by the NFA
 
-# for string in test2:
-#     if octal_nfa.is_accept(string):
+# for string in test1:
+#     if decimal_nfa.is_accept(string):
 #         print(f"'{string}' is valid .")
 #     else:
 #         print(f"'{string}' is not ")
+
+# for string in test2:
+#     if octal_nfa.is_accept(string):
+#         print(f"'{string}' is a valid octal decimal number.")
+#     else:
+#         print(f"'{string}' is not a valid octal decimal number.")
 
 # for string in test3:
 #     if hex_nfa.is_accept(string):
@@ -402,14 +405,26 @@ test4 = [".01e", "1.e", "1.e34", "0.3", "3.14", "10.", ".001", "1e100", "3.14e-1
 #     else:
 #         print(f"'{string}' is not ")
 
-# for string in test:
-#     if octal_nfa.is_accept(string):
-#         print(f"'{string}' is a valid octal decimal number.")
+# for string in test4:
+#     if fpl_nfa.is_accept(string):
+#         print(f"'{string}' is valid .")
 #     else:
-#         print(f"'{string}' is not a valid octal decimal number.")
+#         print(f"'{string}' is not ")
 
-for string in test4:
-    if fpl_nfa.is_accept(string):
-        print(f"'{string}' is valid .")
-    else:
-        print(f"'{string}' is not ")
+
+# main
+user_input = input("Enter a number: ")
+if decimal_nfa.is_accept(user_input):
+    print(f"'{user_input}' is  a decimal integer!")
+
+elif octal_nfa.is_accept(user_input):
+    print(f"'{user_input}' is  an octal integer!")
+   
+elif hex_nfa.is_accept(user_input):
+    print(f"'{user_input}' is  a hexadecimal integer!")
+
+elif fpl_nfa.is_accept(user_input):
+    print(f"'{user_input}' is floating  point literal!")
+
+else:
+    print("The input is not valid!")
