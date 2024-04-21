@@ -44,7 +44,7 @@ This NFA recognizes Python hexadecimal integer literals, which must start with 0
 
 This NFA recognizes Python floating point literals, which include either a “.” or “e”/”E”, with a range of [0123456789eE.+-_], where “+” and “-” can only occur after “e” or “E”, “e” and “E”cannot be the first or last char in the input, and the “.” must come before or after integers or "e", "E". If the input is within this range then it will traverse through the NFA, and if the input is valid, it will be accepted. The program will then say that the input is a floating point integer. Otherwise, the code will say that the input is not valid.
 
-## 🔥Information regarding the project
+# 🔥 Information regarding the project
 
 - The project code including the extra credit task is included in the main.py file
 - Our group name: Lost at C
