@@ -46,11 +46,10 @@ This NFA recognizes Python floating point literals, which include either a â€œ.â
 
 ## Information regarding the project
 
-- The project code including the extra credit task is included in the main.py file.
+- The project code including the extra credit task is included in the main.py file
 - Our group name: Lost at C
-- Members:
-+ Long Hoang
-+ Sct
+- Members: Long Hoang, Joseph Scott
+- Tasks completed by all members: NFA designs, coding and debugging, drafting final report to README file.
 
 
 ## Guidlines for the NFA designs
