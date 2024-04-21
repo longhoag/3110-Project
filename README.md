@@ -1,5 +1,9 @@
 # 3110 Project: Python Numerical Literal Checker
 
+## Project Description
+
+This code recognizes Python decimal, octal, and hexadecimal integers as well as floating point literals. It achieves this by taking the input and running it through an NFA, and if the next char in the input is valid for the given NFA, it will move to the next state until the entire input has gone through the NFA. If the final state is the accept state, then the code will state that the input has been accepted as a decimal, octal, hexadecimal, or floating point literal. The program starts with testing the input as a decimal integer literal, then if it does not get accepted it moves on to be tested as an octal integer literal, then hexadecimal integer literal, and finally as a floating point integer literal. If the input does not get accepted in any of the NFAs then the program will say that the input is invalid.
+
 ## NFA Design Coding Implementation 
 
 ![Screenshot 2024-04-19 at 11 46 11 PM](https://github.com/longhoag/3110-Project/assets/99232763/ee45caf6-6854-40ca-976e-b77e93298de2)
