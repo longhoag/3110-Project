@@ -17,6 +17,8 @@ class NFA:
             current_states = next_states
         return bool(current_states & self.accept_states)
     
+# Define states, alphabet, transitions, start state, and accept states for the NFA
+
 class Decimal:
     states = {0,1,2,3,4}
     alphabet = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_'}
@@ -66,7 +68,6 @@ class Decimal:
     start_state = 0
     accept_state = {1, 3}
 
-# Define states, alphabet, transitions, start state, and accept states for the octal decimal NFA
 class Octal:
     states = {0,1,2,3,4}
     alphabet = {'0', '1', '2', '3', '4', '5', '6', '7', 'o', 'O', '_'}
@@ -376,6 +377,7 @@ hex_nfa = NFA(Hexadecimal.states, Hexadecimal.alphabet, Hexadecimal.transitions,
 
 fpl_nfa = NFA(FloatingPointLiterals.states, FloatingPointLiterals.alphabet, FloatingPointLiterals.transitions, FloatingPointLiterals.start_state, FloatingPointLiterals.accept_state)
 
+# for testing
 test1 = ["0000", "0123", "23_23", "_23_23", "3__3", "33_2134_2342", "232423_", ".23e"]
 
 test2 = [".0O2378", "0o_23", "0O13123"]
