@@ -59,7 +59,7 @@ The NFA design and rules for recognizing the input strings are based on Python d
 - Our group name: Lost at C
 - Members: Long Hoang, Joseph Scott, Michael Castillo
 - Tasks completed by all members: NFA designs, coding and debugging, drafting final report to README file
-
+- We tested our program and it could take the input with more than 20 characters and handle it just fine.
 
 
 
