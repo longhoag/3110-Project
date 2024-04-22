@@ -57,7 +57,7 @@ The NFA design and rules for recognizing the input strings are based on Python d
 
 - The project code including the extra credit task is included in the main.py file
 - Our group name: Lost at C
-- Members: Long Hoang, Joseph Scott
+- Members: Long Hoang, Joseph Scott, Michael Castillo
 - Tasks completed by all members: NFA designs, coding and debugging, drafting final report to README file
 
 
